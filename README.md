@@ -3,7 +3,7 @@ CodeLabsProStore is built using various frameworks including SvelteKit
 
 ## Steps
 
-* Bootstrap
+### Bootstrap
 
 ```
 ==> npm create svelte@latest codekit
@@ -46,12 +46,12 @@ Stuck? Visit us at https://svelte.dev/chat
 
 ```
 
-* Install dotenv
+### Install dotenv
 ```
 ==> npm install dotenv
 ```
 
-* Integrate Tailwind and DaisyUI
+### Integrate Tailwind and DaisyUI
 https://github.com/svelte-add/tailwindcss
 
 ```
@@ -62,7 +62,7 @@ https://github.com/svelte-add/tailwindcss
 ==> npm install -D daisyui
 ```
 
-* Dev
+### Dev
 
 ```
 ==> npm install
@@ -70,3 +70,48 @@ https://github.com/svelte-add/tailwindcss
 ==> npm run dev -- --open
 ```
 
+
+### Home +page.svelte
+
+```
+<div class="hero min-h-screen" style="background-image: url(https://placeimg.com/1000/800/arch);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">CodeLabsPro Store</h1>
+        <p class="mb-5">CodeLabsPro Store</p>
+        <a href="/"><button class="btn btn-primary">Home</button></a>
+        <a href="/about"><button class="btn btn-primary">About</button></a>
+        <a href="/news" data-sveltekit-prefetch><button class="btn btn-primary">News</button></a>
+        <a href="/store" data-sveltekit-prefetch><button class="btn btn-primary">Store</button></a>
+      </div>
+    </div>
+  </div>
+
+```
+
+
+### Home +layout.svelte
+
+```
+<script>
+	import '../app.postcss';
+</script>
+
+<main>
+	<nav>
+		<div class="navbar bg-secondary text-secondary-content flex-1 flex justify-center mr-auto">
+            <a href="/" class="btn btn-ghost normal-case text-xl">Home</a>
+            <a href="/about" class="btn btn-ghost normal-case text-xl">About</a>
+            <a href="/news" class="btn btn-ghost normal-case text-xl">News</a>
+            <a href="/store" class="btn btn-ghost normal-case text-xl">Store</a>
+        </div>
+	</nav>
+</main>
+<slot />
+<style>
+	
+</style>
+
+
+```
