@@ -1,6 +1,10 @@
 # CodeLabsProStore
 CodeLabsProStore is built using various frameworks including SvelteKit
 
+## Screenshots
+
+![Screenshot 1](https://raw.githubusercontent.com/codelabspro/CodeLabsProStore/main/CodeLabsProStore-sveltekit/screenshots/code_labs_pro_store_1.png)
+
 ## Steps
 
 ### Bootstrap
