@@ -1,5 +1,5 @@
-# CodeLabsStore
-CodeLabsStore built using SvelteKit
+# CodeLabsProStore
+CodeLabsProStore is built using various frameworks including SvelteKit
 
 ## Steps
 
