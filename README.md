@@ -160,3 +160,10 @@ export const load = async ({ fetch }) => {
     </div>
 </div>
 ```
+
+## Links
+
+https://kit.svelte.dev
+
+https://dummyjson.com/products?limit=2
+
